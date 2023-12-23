@@ -1,0 +1,29 @@
+{
+  "name": "js-scribe",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "bin": "dist/index.js",
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@js-scribe/local-client": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "esbuild": "0.8.26",
+    "typescript": "^5.3.3",
+    "@js-scribe/local-api": "^1.0.0",
+    "commander": "^11.1.0"
+  }
+}
