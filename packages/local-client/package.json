@@ -66,5 +66,8 @@
       "last 1 safari version"
     ]
   },
-  "gitHead": "5e5b0dde79552bd393b368146bc7e00a7272e02b"
+  "gitHead": "5e5b0dde79552bd393b368146bc7e00a7272e02b",
+  "dependencies": {
+    "monaco-jsx-highlighter": "0.0.15"
+  }
 }

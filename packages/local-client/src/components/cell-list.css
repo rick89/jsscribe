@@ -1,7 +1,11 @@
 .cell-list {
-    margin: 0 10px;
+    margin: 25px 10px;
 }
 
 .react-draggable-transparent-selection .cell-list {
     margin-bottom: 100vh;
+}
+
+.react-resizable > div {
+    height: 100%;
 }

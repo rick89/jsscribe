@@ -42,7 +42,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
             editorDidMount={onEditorDidMount}
             options={{
                 wordWrap: 'on',
-                minimap: { enabled: true },
+                minimap: { enabled: false },
                 showUnused: false,
                 lineNumbersMinChars: 5,
                 folding: false,

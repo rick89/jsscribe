@@ -2,7 +2,11 @@
     position: relative;
     opacity: 0;
     transition: opacity .3s ease-in 0.1s;
-    margin: 0 0 20px 0;
+    margin: 20px 0;
+}
+
+.add-cell:last-child {
+    margin: 30px 0 20px;
 }
 
 .add-cell .divider {
@@ -22,7 +26,7 @@
     justify-content: center;
 }
 
-.add-cell.force-visible .add-buttons {
+.add-cell.force-visible {
     opacity: 1;
 }
 

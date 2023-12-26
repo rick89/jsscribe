@@ -9,10 +9,10 @@ interface AddCellProps {
 
 const AddCell:React.FC<AddCellProps> = ({previousCellId, forceVisible}) => {
     const {insertCellAfter} = useActions()
-    return <div className={`add-cell ${forceVisible && 'force-visible'}`}>
+    return <div className={`add-cell${forceVisible ? ' force-visible' : ''}`}>
         <div className='add-buttons'>
-            <Button rounded={true} text='+ Code' onClick={() => insertCellAfter(previousCellId, 'code')} />
-            <Button rounded={true} text='+ Text' onClick={() => insertCellAfter(previousCellId, 'text')} />
+            <Button rounded={true} text='+ Code' onClick={() => insertCellAfter(previousCellId, 'code', '')} />
+            <Button rounded={true} text='+ Text' onClick={() => insertCellAfter(previousCellId, 'text', '')} />
         </div>
         <div className="divider"></div>
     </div>
