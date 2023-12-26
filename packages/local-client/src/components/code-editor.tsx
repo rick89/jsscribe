@@ -4,6 +4,9 @@ import Prettier from 'prettier'
 import parser from 'prettier/parser-babel'
 import 'bulmaswatch/superhero/bulmaswatch.min.css'
 import './code-editor.css'
+import codeShift from 'jscodeshift'
+import Highlighter from 'monaco-jsx-highlighter'
+import './syntax.css'
 
 interface CodeEditorProps {
     initialValue: string
@@ -18,6 +21,19 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
         monacoEditor.onDidChangeModelContent(() => {
             onChange(getValue())
         })
+
+        const highlighter = new Highlighter(
+            // @ts-ignore
+            window.monaco,
+            codeShift,
+            monacoEditor
+        )
+        highlighter.highLightOnDidChangeModelContent(
+            () => {},
+            () => {},
+            undefined,
+            () => {}
+        )
     }
 
     const formatOnClick = () => {

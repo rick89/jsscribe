@@ -68,6 +68,8 @@
   },
   "gitHead": "5e5b0dde79552bd393b368146bc7e00a7272e02b",
   "dependencies": {
+    "@types/jscodeshift": "0.7.2",
+    "jscodeshift": "0.11.0",
     "monaco-jsx-highlighter": "0.0.15"
   }
 }
