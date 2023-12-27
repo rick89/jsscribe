@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "../local-api/src/resources/default-cells.js"  ]
+, "../local-api/src/resources/default-cells.ts"  ]
 }
