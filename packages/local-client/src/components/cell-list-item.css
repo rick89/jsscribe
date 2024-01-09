@@ -1,8 +1,8 @@
 .cell-list-item {
-    position: relative;
+	position: relative;
 }
 .action-bar-wrapper {
-    height: 30px;
-    width: 100%;
-    background: #37414b;
+	height: 30px;
+	width: 100%;
+	background: #37414b;
 }

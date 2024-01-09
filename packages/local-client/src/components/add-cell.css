@@ -1,39 +1,39 @@
 .add-cell {
-    position: relative;
-    opacity: 0;
-    transition: opacity .3s ease-in 0.1s;
-    margin: 20px 0;
+	position: relative;
+	opacity: 0;
+	transition: opacity 0.3s ease-in 0.1s;
+	margin: 20px 0;
 }
 
 .add-cell:last-child {
-    margin: 30px 0 20px;
+	margin: 30px 0 20px;
 }
 
 .add-cell .divider {
-    position: absolute;
-    width: 96%;
-    right: 2%;
-    left: 2%;
-    height: 1px;
-    background: gray;
-    top: 50%;
-    bottom: 50%;
-    z-index: -1;
+	position: absolute;
+	width: 96%;
+	right: 2%;
+	left: 2%;
+	height: 1px;
+	background: gray;
+	top: 50%;
+	bottom: 50%;
+	z-index: -1;
 }
 
 .add-cell .add-buttons {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .add-cell.force-visible {
-    opacity: 1;
+	opacity: 1;
 }
 
 .add-cell:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .add-cell .add-buttons button {
-    margin: 0 20px;
+	margin: 0 20px;
 }

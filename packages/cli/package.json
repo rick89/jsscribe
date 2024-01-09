@@ -1,31 +1,31 @@
 {
-  "name": "js-scribe",
-  "version": "1.0.2",
-  "description": "",
-  "files": [
-    "dist"
-  ],
-  "bin": "dist/index.js",
-  "scripts": {
-    "start": "tsc --watch --preserveWatchOutput",
-    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@js-scribe/local-client": "^1.0.2",
-    "monaco-jsx-highlighter": "0.0.15"
-  },
-  "devDependencies": {
-    "@js-scribe/local-api": "^1.0.2",
-    "@types/node": "^20.10.5",
-    "commander": "^11.1.0",
-    "esbuild": "0.8.26",
-    "typescript": "^5.3.3"
-  },
-  "gitHead": "5e5b0dde79552bd393b368146bc7e00a7272e02b"
+	"name": "js-scribe",
+	"version": "1.0.2",
+	"description": "",
+	"files": [
+		"dist"
+	],
+	"bin": "dist/index.js",
+	"scripts": {
+		"start": "tsc --watch --preserveWatchOutput",
+		"prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@js-scribe/local-client": "^1.0.2",
+		"monaco-jsx-highlighter": "0.0.15"
+	},
+	"devDependencies": {
+		"@js-scribe/local-api": "^1.0.2",
+		"@types/node": "^20.10.5",
+		"commander": "^11.1.0",
+		"esbuild": "0.8.26",
+		"typescript": "^5.3.3"
+	},
+	"gitHead": "5e5b0dde79552bd393b368146bc7e00a7272e02b"
 }
